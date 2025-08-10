@@ -27,9 +27,9 @@
           Pobegnite v&nbsp;divjino in praznujte z nami med bujnim zelenjem.
         </p>
         <p class="event-details">
-          <strong>Datum:</strong> 29.&nbsp;avgust&nbsp;2025<br />
+          <strong>Datum:</strong> petek,&nbsp;29.&nbsp;avgust&nbsp;2025<br />
           <strong>Čas:</strong> od&nbsp;19.&nbsp;ure naprej<br />
-          <strong>Lokacija:</strong> naš dom v&nbsp;Ljubljani, Slovenija
+          <strong>Lokacija:</strong> Preglov&nbsp;trg&nbsp;12, Ljubljana
         </p>
         <a
           href="#rsvp"
@@ -83,53 +83,26 @@
           Sporočite nam, ali se boste udeležili, tako da izpolnite spodnji
           obrazec. Veselimo se praznovanja z vami!
         </p>
-        <form
-          action="mailto:your.email@example.com?subject=Potrditev%20udelezbe%20-%20zabava%20v%20dzungli"
-          method="POST"
-          enctype="text/plain"
-        >
-          <div class="form-group">
-            <label for="name">Ime</label>
-            <input
-              type="text"
-              id="name"
-              name="Ime"
-              placeholder="Vaše ime in priimek"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">E‑pošta</label>
-            <input
-              type="email"
-              id="email"
-              name="E‑pošta"
-              placeholder="vas@example.com"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="guests">Število gostov</label>
-            <input
-              type="number"
-              id="guests"
-              name="Število gostov"
-              min="1"
-              max="10"
-              value="1"
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">Sporočilo (neobvezno)</label>
-            <textarea
-              id="message"
-              name="Sporočilo"
-              rows="3"
-              placeholder="Dodajte morebitne posebne prehranske zahteve ali glasbene želje."
-            ></textarea>
-          </div>
-          <button type="submit" class="submit-button">Pošlji potrditev</button>
-        </form>
+        <!--
+          The RSVP form is now handled by Google Forms.  To integrate your
+          own form, create a new Google Form with fields for Name, Email,
+          Number of Guests and a message.  In the Google Form editor click
+          Send → Embed (< > icon) and copy the provided <iframe> code.  Replace
+          the src attribute below with the embed URL from your form.
+        -->
+        <div class="google-form-container">
+          <iframe
+            title="RSVP form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScvZ03T_IKRj0tMi-hHxSZ18WERzDfcgFNPkLbX3jdMngFfVA/viewform?embedded=true"
+            width="100%"
+            height="600"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          >
+            Nalaganje…
+          </iframe>
+        </div>
       </section>
     </main>
 
