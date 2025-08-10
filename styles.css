@@ -101,6 +101,27 @@ a {
   outline: none;
 }
 
+/* Container for multiple call-to-action buttons in the hero section */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Secondary call-to-action button styling */
+.cta-secondary {
+  background-color: #2e8b57;
+  color: #ffffff;
+}
+
+.cta-secondary:hover,
+.cta-secondary:focus {
+  background-color: #349e67;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.35);
+  outline: none;
+}
+
 /* Main content */
 main {
   padding: 3rem 1rem;
