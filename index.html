@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vabilo na zabavo v džungli</title>
+    <!--
+      The styles for this site are defined in styles.css.  Keeping the
+      CSS separate makes it easier to maintain and ensures that the HTML
+      remains clean and semantic.  If you update the colour palette or
+      typography, you only need to do it in one place.
+    -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--
+      Hero section: introduces the event with a vibrant backdrop and clear
+      headline.  A semi‑transparent overlay on top of the background image
+      ensures that the text remains legible for all visitors, even those
+      with visual impairments.
+    -->
+    <header class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content" role="banner">
+        <h1>Vabljeni na zabavo v&nbsp;džungli!</h1>
+        <p class="tagline">
+          Pobegnite v&nbsp;divjino in praznujte z nami med bujnim zelenjem.
+        </p>
+        <p class="event-details">
+          <strong>Datum:</strong> 29.&nbsp;avgust&nbsp;2025<br />
+          <strong>Čas:</strong> od&nbsp;19.&nbsp;ure naprej<br />
+          <strong>Lokacija:</strong> naš dom v&nbsp;Ljubljani, Slovenija
+        </p>
+        <a
+          href="#rsvp"
+          class="cta-button"
+          aria-label="Pomakni se do obrazca za potrditev udeležbe"
+          >Potrdi udeležbo</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!--
+        Invitation section: provides additional context about the theme.
+        Using paragraphs instead of long lines ensures that screen readers
+        can pause naturally between ideas.  All images include alt text
+        describing their content.
+      -->
+      <section class="invitation" id="about">
+        <h2>O zabavi</h2>
+        <p>
+          Pridružite se nam na nepozabnem večeru, ko bomo naš dom spremenili
+          v&nbsp;bujno džunglo. Pričakujete lahko živahne okraske, tropske pijače
+          in glasbo, ki vas bo popeljala v&nbsp;deževni gozd. Oblecite se v svojo
+          najljubšo džungelsko opravo – živalski vzorci, drzne barve ali
+          safari stil.
+        </p>
+        <p>
+          To druženje bo polno smeha, glasbe in dobre družbe. Komaj čakamo,
+          da se nam pridružite in z nami odplešete v&nbsp;divjino!
+        </p>
+        <figure class="themed-image">
+          <img
+            src="16e7ecd4-21b4-49cb-b840-46637321b50e.png"
+            alt="Abstrakten vzorec prekrivajočih se zelenih oblik s tropskim pridihom"
+          />
+          <figcaption>
+            Živahno abstraktno ozadje vzbuja duh zabave v&nbsp;džungli.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!--
+        RSVP section: visitors can enter their details to let you know if
+        they're coming.  The form uses semantic labels and appropriate
+        input types to improve accessibility.  The default action uses a
+        mailto link; update the e‑mail address to your own before deploying.
+      -->
+      <section class="rsvp" id="rsvp">
+        <h2>Potrditev udeležbe</h2>
+        <p>
+          Sporočite nam, ali se boste udeležili, tako da izpolnite spodnji
+          obrazec. Veselimo se praznovanja z vami!
+        </p>
+        <form
+          action="mailto:your.email@example.com?subject=Potrditev%20udelezbe%20-%20zabava%20v%20dzungli"
+          method="POST"
+          enctype="text/plain"
+        >
+          <div class="form-group">
+            <label for="name">Ime</label>
+            <input
+              type="text"
+              id="name"
+              name="Ime"
+              placeholder="Vaše ime in priimek"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E‑pošta</label>
+            <input
+              type="email"
+              id="email"
+              name="E‑pošta"
+              placeholder="vas@example.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="guests">Število gostov</label>
+            <input
+              type="number"
+              id="guests"
+              name="Število gostov"
+              min="1"
+              max="10"
+              value="1"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Sporočilo (neobvezno)</label>
+            <textarea
+              id="message"
+              name="Sporočilo"
+              rows="3"
+              placeholder="Dodajte morebitne posebne prehranske zahteve ali glasbene želje."
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-button">Pošlji potrditev</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Zabava v&nbsp;džungli. Vse pravice pridržane. Vabilo
+        lahko delite s prijatelji.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

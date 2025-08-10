@@ -1,0 +1,243 @@
+/*
+ * Global styles for the Jungle Party invitation website.
+ *
+ * The typography and colour palette are chosen to be easy on the eyes
+ * while still capturing the vibrant feel of a tropical celebration.
+ * All dimensions use relative units (rem/em) where appropriate so
+ * the design scales gracefully across devices.  A small set of media
+ * queries ensure that the layout adapts on narrow screens.
+ */
+
+/* Reset some default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #0a2b16;
+  background-color: #f4fdf8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 32rem;
+  background-image: url('bart-zimny-W5XTTLpk1-I-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 0 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.event-details {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ffce43;
+  color: #0a2b16;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: #ffd95f;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.35);
+  outline: none;
+}
+
+/* Main content */
+main {
+  padding: 3rem 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.invitation h2,
+.rsvp h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: #103d23;
+}
+
+.invitation p,
+.rsvp p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #163e2c;
+}
+
+.themed-image {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.themed-image img {
+  max-width: 100%;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.themed-image figcaption {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  color: #3a5e46;
+  font-style: italic;
+}
+
+/* RSVP form */
+.rsvp form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #0a2b16;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2e8b57;
+  outline: none;
+}
+
+.submit-button {
+  align-self: flex-start;
+  background-color: #2e8b57;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #349e67;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.875rem;
+  color: #497f60;
+  background-color: #ecf5ef;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .tagline {
+    font-size: 1.1rem;
+  }
+  .event-details {
+    font-size: 0.95rem;
+  }
+  .cta-button {
+    font-size: 0.9rem;
+  }
+  main {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 85vh;
+  }
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+  .tagline {
+    font-size: 1rem;
+  }
+}
